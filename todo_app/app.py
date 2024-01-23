@@ -1,6 +1,4 @@
-from flask import Flask, redirect, request
-from flask import render_template
-import todo_app
+from flask import Flask, redirect, request, render_template
 from todo_app.data.session_items import add_item, get_items
 from todo_app.flask_config import Config
 
