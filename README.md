@@ -53,3 +53,11 @@ Press CTRL+C to quit
  * Debugger PIN: 113-666-066
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
+
+## Running the tests
+To run the test for codebase run the following command:
+
+Poetry run pytest
+
+
+(please make sure you have run 'poetry install' before you can install 'pytest')
