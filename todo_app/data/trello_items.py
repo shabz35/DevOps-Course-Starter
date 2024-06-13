@@ -4,7 +4,8 @@ import requests
 from todo_app.data.item import Item
 
 def get_items():
-    reqUrl = "https://api.trello.com/1/boards/65afd1d3a662c6c7228ce261/lists"
+    board_id =  os.getenv("TRELLO_BOARD_ID")
+    reqUrl = f"https://api.trello.com/1/boards/{board_id}/lists"
 
     query_parameters =  {
         "key": os.getenv("TRELLO_API_KEY"),
